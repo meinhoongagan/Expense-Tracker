@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <h1>Expense Tracker</h1>
+        <input id="Description" type="text" placeholder="Expense Description">
+        <select name="category" id="category"> <!-- Corrected spelling of category -->
+            <option value="Category">Category</option> <!-- Corrected spelling of category -->
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Others">Others</option>
+        </select>
+        <input type="number" placeholder="Amount" id="Amount">
+        <button onclick="add_expense()" id="btn">Add Expense</button>
+    </form>
+        <div class="summary">
+            <h2>Expense Summary</h2> <!-- Changed h1 to h2 for consistency -->
+            <table id="table">
+                <tr>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="Scripts.js">
+      
+    </script>
+</body>
+</html>
